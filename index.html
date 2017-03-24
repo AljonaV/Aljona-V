@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+
+<body>
+    <h1>Hello my first JAVASCRIPT</h1>
+
+    <audio id="discosound" preload="auto">
+    <source src="sounds/disco_soos.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        var discosound = document.querySelector("#discosound");
+
+
+        function playdiscosound(){
+        discosound.volume=.5;
+
+            discosound.play();
+            console.log("few");
+        }
+
+
+    </script>
+
+    <button onclick="playdiscosound()">play</button>
+
+    <button onclick="dipperrun30()">Run to 30!</button>
+    <button onclick="runfrom30()">Run from 30</button>
+    <button onclick="dipperjump()">Jump</button>
+    <button onclick="dippermove()">Move</button>
+    <button onclick="dipperrun()">Run through</button>
+    <button onclick="dipperrotate()">Rotate</button>
+    <button onclick="dipperscale()">Scale</button>
+    <button onclick="dippermirror()">Mirror</button>
+    <button onclick="dipperfade()">Fade</button>
+    <button onclick="dippershake()">Shake</button>
+    <div class="scene"> <img id="dipper" src="img/dipper.png"> </div>
+    <script src="js/js.js"></script>
+</body>
+</html>

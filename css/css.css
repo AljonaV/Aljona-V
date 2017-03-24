@@ -1,0 +1,116 @@
+.scene{
+   border:1px solid yellow;
+}
+h1{
+    color:red;
+   }
+
+#dipper {
+    position: relative;
+}
+.jump{
+    animation:jump 0.5s 1;
+    animation-timing-function: ease-in-out;
+}
+@keyframes jump {
+    100% {transform: translateY(-55px);}
+}
+
+.move{
+    animation:move 0.5s 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes move {
+    100% {transform: translateX(30%);}
+}
+
+.run{
+    animation:run 0.5s 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes run {
+    0% { left: -30%;}
+    100% {left: 120%;}
+}
+
+.run30{
+    animation:run30 0.5s 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes run30 {
+    0% { left: -30%;}
+    100% {left: 30%;}
+}
+
+.runfrom30{
+    animation: runfrom30 0.5s 1;
+    animation-timing-function: ease-in-out;
+}
+@keyframes runfrom30{
+    0%{left:30%;}
+    100%{left: 120%;}
+}
+
+
+.rotate{
+    animation: rotate 0.5s 1;
+    animation-timing-function: ease-in-out;
+}
+@keyframes rotate {
+    100%{transform:rotate(1000deg);}
+}
+
+.scale{
+    animation: scale 0.5s 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes scale{
+    100%{transform: scale(1.2, 0.5);}
+}
+
+.mirror{
+    animation: mirror 0.5s 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes mirror{
+    100%{transform: scale(-1, 1);}
+}
+
+.fade{
+    animation: fade 1s ease-out;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fade{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.shake{
+    animation:shake 0.5s 3;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translateX(-1px);
+  }
+
+  20%, 80% {
+    transform: translateX(2px);
+  }
+
+  30%, 50%, 70% {
+    transform: translateX(-4px);
+  }
+
+  40%, 60% {
+    transform: translateX(4px);
+  }
+}
